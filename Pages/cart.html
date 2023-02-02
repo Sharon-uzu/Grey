@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../Asset/style/style.css">
+  <link rel="stylesheet" href="../Asset/style/media.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart </title>
+</head>
+<body onload="refresh()">
+  <section class="cart">
+    <a href="../Pages/vendor.html"><div class="x"><img src="../Asset/image/x.svg" alt=""></div></a>
+
+    <div class="cart-c">
+      <div class="cart-left">
+        <div class="c-img">
+          <img src="../Asset/image/cart-f.png" alt="">
+        </div>
+        <div class="cart-lc">
+          <h3>Jollof rice</h3>
+          <h4> ₦2,000</h4>
+          <p>Pellentesque aliquam phasellus arcu auctor erat mattis malesuada. Sed malesuada tristique ullamcorper adipiscing volutpat nibh netus adipiscing volutpat nibh.</p>
+        </div>
+      </div>
+
+      <form action="../Pages/check.html" method="get">
+        <div class="form-c" id="form-one">
+          <label for="">Select Protein <span>Required</span></label> <br>
+            <select name="first" id="first" required>
+              <option value="1">chicken</option>
+              <option value="2">beef</option>
+              <option value="3">catfish</option>
+          <select> <br>
+
+          <label for="">Select extra <span>Required</span></label> <br>
+            <select name="second" id="second" required>
+              <option value="1">salad</option>
+              <option value="2">moi moi</option>
+            <select><br>
+
+
+          <label for="">Select drinks <span>Required</span></label> <br>
+
+            <select name="third" id="third" required>
+              <option value="1">fanta</option>
+              <option value="2">coke</option>
+              <option value="3">sprite</option>
+          <select>
+
+            <p>Chose quantity of water</p>
+            <div class="water">
+              <!-- <input type="checkbox" name="" id="inputc" onclick="check1()" ><p>Water <span><span id="water">₦150 </span>(optional)</span></p> -->
+               <input type="number" name="" id="inputc" onclick="check1()" min="0" class="no-of-water"><p>Water <span><span id="water">₦150 </span>(optional)</span></p>
+
+
+            </div>
+
+
+            <div class="add-cart">
+              <div class="first">
+                  <button id="decrement">-</button>
+                  <button class="one" id="quantity"></button>
+                  <button id="increment">+</button>
+                  
+              </div>
+              <div class="second">
+                <button type="submit" style="border-radius: 5px;" class="add"><div class="add">
+                  <h5> ₦<span id="price">2,000</span></h5>
+                  <h4>ADD TO CART</h4>
+                </div></button>
+              </div>
+            </div>
+
+            
+
+        </div>
+
+        <!-- <div class="add-to-cart">
+          <div class="minus-c">
+            <div class="minus">
+              <span>&minus;</span>
+            </div>
+            <div class="minus num-items">
+              <span>1</span>
+            </div>
+            <div class="minus">
+              <span>&plus;</span>
+            </div>
+          </div>
+          
+        </div> -->
+
+
+
+
+        
+        <!-- <div class="add-to-cart">
+          <div class="minus-c">
+            <div class="minus">
+              <span>&minus;</span>
+            </div>
+            <div class="minus num-items">
+              <span>1</span>
+            </div>
+            <div class="minus">
+              <span>&plus;</span>
+            </div>
+          </div>
+          
+        </div> -->
+
+
+        
+        
+      </form>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../Script/cart.js"></script>
+
+  <script>
+    var order = document.getElementById('order');
+    var formOne = document.getElementById('form-one');
+    var formTwo = document.getElementById('form-two');
+    var prev = document.getElementById('prev')
+
+    order.addEventListener('click', function(){
+      formOne.style.display = 'none'
+      formTwo.style.display = 'block'
+    })
+
+    prev.addEventListener('click', function(){
+      formOne.style.display = 'block'
+      formTwo.style.display = 'none'
+    })
+
+
+  </script>
+</body>
+</html>

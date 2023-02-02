@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Asset/style/style.css">
+    <link rel="stylesheet" href="../Asset/style/media.css">
+    <title>AZ - Vendor SignUp</title>
+</head>
+<body>
+    <section class="sign">
+
+        <div class="img-b"></div>
+        <div class="signup signup2">
+
+
+    <form action="../Pages/Vlogin.html" method="get">
+        <h1>Sign Up As a Vendor</h1>
+        <div class="input">
+            <input type="text"  id="full" placeholder="Business name" required>
+            <input type="text"  id="last" placeholder="Business Reg no." required>
+            <input type="text"  id="address" placeholder="Business Account no." required>
+            <input type="email" name="" id="email" placeholder="E-mail" required>
+            <input type="tel" name="" id="tel" placeholder="Phone no." required>
+            <input type="password" name="" id="password" placeholder="Password" required>
+        </div>
+        <button type="submit" onclick="check()">SignUp</button>
+
+        <div class="acct">
+            <p class="para">Got an account already? <span><a href="../Pages/Vlogin.html">LogIn</a></span></p>
+        </div>
+        
+    </div>
+</form>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../Script/main.js"></script>
+
+
+    <script>
+        
+        function check(){
+    if (full.value == "") {
+        alert('Please enter your full name');
+        return false;
+    } 
+
+
+    if(document.getElementById('email').value == ""){
+        alert('Please enter your email');
+       return false
+    }
+    else if(document.getElementById('password').value == ""){
+        alert('Please choose a password');
+       return false
+    }
+    else{
+       
+    }
+
+}
+
+
+
+
+
+    </script>
+</body>
+</html>

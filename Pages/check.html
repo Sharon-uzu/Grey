@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../Asset/style/style.css">
+  <link rel="stylesheet" href="../Asset/style/media.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AZ - CheckOut </title>
+</head>
+<body>
+  <section class="checks">
+    <form>
+      <div class="check">
+          <h3>CheckOut</h3>
+          <a href="../Pages/cart.html"><div class="x1"><img src="../Asset/image/x.svg" alt=""></div></a>
+      </div>
+
+      <div class="check-flex">
+        <div class="c-left">
+          <div class="left-c">
+            <div class="ch-box">
+              <div class="c-img">
+                <img src="../Asset/image/ride-removebg-preview.png" alt="">
+              </div>
+              <div class="c-text">
+                <h2>Delivery</h2>
+                <p>Delivery in 20 - 40 mins</p>
+              </div>
+            </div>
+
+            <div class="form">
+              <!-- <p><input type="checkbox" name="" id="one"> <span>For Self</span></p>
+              <p><input type="checkbox" name="" id="two" onclick="isChecked()"> <span>For Friend</span></p> -->
+
+              <tr>
+                <td><input type="checkbox" name="progress" id="progress1" value="1" tabIndex="1" onClick="ckChange(this)" required>For Self</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="progress" id="two" value="1" tabIndex="1" onClick="ckChange(this)" required>For Friend</td>
+              </tr>
+              
+
+            </div>
+
+            <div class="c-input" id="phone">
+              <input type="text" name="" id="" placeholder="Friend's phone number" required>
+              <input type="text" name="" id="" placeholder="Friend's Location" required>
+
+              
+            </div>
+
+            <div class="ch-box h-box">
+              <div class="c-img">
+                <img src="../Asset/image/call-removebg-preview (1).png" alt="">
+              </div>
+              <div class="c-text">
+                <h2>Phone Number</h2>
+                <p id="output">+234 768933028</p>
+                
+              </div>
+              <div class="edit" id="edit2" style="cursor: pointer;"><p>Edit</p></div>
+            </div>
+
+            <div class="ch-box" id="delivery">
+              <div class="c-img">
+                <img src="../Asset/image/location-removebg-preview (1).png" alt="">
+              </div>
+              <div class="c-text">
+                <h2>Your Delivery Location</h2>
+                <p id="output1">#2 Palace road, Ahoada RD, Omoku</p>
+              </div>
+              <div class="edit" id="edit3" style="cursor: pointer;"><p>Edit</p></div>
+            </div>
+
+            
+
+            <div class="ch-box ch">
+              <div class="c-img">
+                <img src="../Asset/image/pay.png" alt="">
+              </div>
+              <div class="c-text">
+                <h2>Payment Method</h2>
+                
+              </div>
+            </div>
+
+            <div class="p-box">
+              <div class="btn-group drop">
+                <button type="button" class="btn dropdown-toggle btn" data-bs-toggle="dropdown" aria-expanded="false">
+                 Choose a payment method
+                </button>
+                <ul class="dropdown-menu mnu">
+                  <li><a class="dropdown-item" href="#">Card</a></li>
+                  <li><a class="dropdown-item" href="#">Transfer</a></li>
+                </ul>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+        <div class="c-right">
+
+          <div class="p-box">
+            <div class="c-img">
+              <img src="../Asset/image/azn-removebg-preview.png" alt="">
+            </div>
+            <div class="c-text " style="cursor: pointer;">
+              <h2>Get Free Delivery With AZ Grey Express</h2>
+            </div>
+          </div>
+
+          <input type="text" name="" id="" placeholder="Note (allergies.....)" class="note" style="background-color: rgba(243, 240, 240, 0.4); height: 45px; border: none;">
+
+
+          <div class="sub">
+            <p>Sub total</p>
+            <p> ₦ 6,000.00</p>
+          </div>
+
+          <div class="sub">
+            <p>VAT (10%)</p>
+            <p>  ₦ 600.00</p>
+          </div>
+
+          <div class="sub">
+            <p>Delivery Fee</p>
+            <p>  ₦ 320.00</p>
+          </div>
+
+          <div class="sub">
+            <p>Container Charges</p>
+            <p>  ₦ 300.00</p>
+          </div>
+
+
+          <div class="voucher">
+            <img src="../Asset/image/voucher-removebg-preview.png" alt="">
+            <input type="text" name="" id="" placeholder="Voucher Code">
+          </div>
+
+
+          <div class="sub total">
+            <h4>Total <span style="font-weight: 500;">(Incl VAT)</span> </h4>
+            <h4>  ₦ 7,220.00</h4>
+          </div>
+
+
+          <div class="submit">
+            <button type="submit">Place Order</button>
+          </div>
+
+        </div>
+        
+
+        </div>
+        <div class="black" id="black"></div>
+        <div class="abs1" id="pop1">
+          <h2 class="ab" id="a1">X</h2>
+          <p>Change Phone Number</p>
+          <input type="tel" name="" id="new" placeholder="Add new number" required>
+          <button type="button" id="btn1" onclick="save1()">Save</button>
+        </div>
+
+        <div class="abs1" id="pop2">
+          <h2 class="ab" id="a2">X</h2>
+          <p>Change Location</p>
+          <input type="text" name="" id="new2" placeholder="Add new address" required>
+          <button type="button" id="btn2" onclick="save2()">Save</button>
+        </div>
+      
+    </form>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    var two = document.getElementById('two')
+
+
+   two.addEventListener('click', function(){
+    if(document.getElementById("two").checked){
+        document.getElementById('phone').style.display = 'block';
+        document.getElementById('delivery').style.display = 'none'
+      }else{
+        document.getElementById('phone').style.display = 'none';
+        document.getElementById('delivery').style.display = 'block'
+      }
+   })
+
+    var pop1 = document.getElementById('pop1');
+    var pop2 = document.getElementById('pop2');
+    var black = document.getElementById('black');
+    var edit1 = document.getElementById('edit1');
+    var edit2 = document.getElementById('edit2');
+    var edit3 = document.getElementById('edit3');
+    
+
+    var output = document.getElementById('output');
+   var new1 = document.getElementById('new');
+   var btn1 = document.getElementById('btn1');
+   var output1 = document.getElementById('output1');
+   var new2 = document.getElementById('new2');
+   var btn2 = document.getElementById('btn2');
+   var a1 = document.getElementById('a1');
+   var a2 = document.getElementById('a2')
+
+
+    
+
+    edit2.addEventListener('click', function(){
+      black.style.display = 'block';
+      pop1.style.display = 'block'
+    })
+
+    edit3.addEventListener('click', function(){
+      black.style.display = 'block';
+      pop2.style.display = 'block'
+    })
+
+    a1.addEventListener('click', function(){
+      black.style.display = 'none';
+      pop1.style.display = 'none'
+    })
+
+    a2.addEventListener('click', function(){
+      black.style.display = 'none';
+      pop2.style.display = 'none'
+    })
+
+    function func1(){
+      output.innerHTML = new1.value;
+    }
+
+    btn1.addEventListener('click', func1);
+
+    function func2(){
+      output1.innerHTML = new2.value;
+    }
+
+    btn2.addEventListener('click', func2);
+
+
+
+
+    function save1(){
+      if(new1.value == "") {
+        alert('Please enter new number');
+        return false;
+    } else{
+      black.style.display = 'none';
+      pop1.style.display = 'none'
+    }
+    }
+
+    function save2(){
+      if(document.getElementById('new2').value == "") {
+        alert('Please enter new address');
+        return false;
+    } else{
+      black.style.display = 'none';
+      pop2.style.display = 'none'
+    }
+    }
+
+    
+
+    
+    
+    
+
+
+    function ckChange(el) {
+  var ckName = document.getElementsByName(el.name);
+  for (var i = 0, c; c = ckName[i]; i++) {
+   c.disabled = !(!el.checked || c === el);
+  }
+}
+
+  </script>
+  
+</body>
+</html>

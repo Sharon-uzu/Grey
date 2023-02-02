@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Asset/style/vendors.css">
+    <link rel="stylesheet" href="../Asset/style/media.css">
+    <title>Offer</title>
+</head>
+<body>
+    <div class="live-d">
+        <div class="live-d">
+            <div class="menu">
+                <img src="../Asset/image/Hamburger Menu.svg" alt="" id="opens">
+                <img src="../Asset/image/close-icon.webp" alt="" id="closes">
+                <div id="dark">
+    
+                </div>
+            </div>
+
+        <div class="dash" id="dashb">
+            <div class="dashc">
+                <div class="prof">
+                    <img src="../Asset/image/profile.svg" alt="">
+                </div>
+
+                <div class="dashf">
+                    <div class="dash-img">
+                        <img src="../Asset/image/Fast Food Drive Thru.svg" alt="">
+                    </div>
+                    <div class="dash-txt">
+                        <a href="../vendors/live.html"><p>Live Order</p></a>
+                    </div>
+                </div>
+
+                <div class="dashf">
+                    <div class="dash-img">
+                        <img src="../Asset/image/Shopaholic.svg" alt="">
+                    </div>
+                    <div class="dash-txt">
+                        <a href="../vendors/order.html"><p>order history</p></a>
+                    </div>
+                </div>
+
+                <div class="dashf">
+                    <div class="dash-img">
+                        <img src="../Asset/image/Basket.svg" alt="">
+                    </div>
+                    <div class="dash-txt">
+                        <a href="../vendors/product.html"><p>products</p></a>
+                    </div>
+                </div>
+
+                <div class="dashf dash-flx">
+                    <div class="dash-img">
+                        <img src="../Asset/image/Sale.svg" alt="">
+                    </div>
+                    <div class="dash-txt">
+                        <a href="../vendors/offer.html"><p>offer</p></a>
+                    </div>
+                </div>
+
+                <div class="dashf">
+                    <div class="dash-img">
+                        <img src="../Asset/image/Settings.svg" alt="">
+                    </div>
+                    <div class="dash-txt">
+                        <a href=""><p>setting</p></a>
+                    </div>
+                </div>
+
+                <div class="mode">
+                    <div class="open" style="margin-bottom: 10px;">
+                      <td>Open<input type="radio" name="progress" id="progress1" value="1" tabIndex="1" onClick="ckChange(this)" required style="margin-left: 6px;"></td><br>
+                    </div>
+                   <div class="close">
+                    <td>Close<input type="radio" name="progress" id="two" value="1" tabIndex="1" onClick="ckChange(this)" required style="margin-left: 6px;"></td>
+                   </div>   
+                      
+            </div>
+
+
+            </div>
+        </div>
+        
+        <div class="d-right">
+            <form>
+                <div class="products">
+                    <div class="inp">
+
+                        <p>Company Name</p>
+                        <input type="text" name="" id="company" required>
+
+                        <p>Deal</p>
+                        <input type="text" name="" id="deal" required>
+
+                        <p>Discount</p>
+                        <input type="text" name="" id="discount" required>
+
+
+                    </div>
+
+                    <div class="img imgg">
+                        <div class="last">
+                        
+
+                            <label for="inpFile" class="selfie" id="imag1">
+                                <input type="file" name="inpFile" id="inpFile" style="position: absolute ; visibility: hidden;" required> 
+                                    <img src="../Asset/image/add.png" alt=""> 
+                            </label>
+                    </div>
+                    <div class="butt">
+                        <button type="button" onclick="func" id="save">SAVE</button>
+                    </div>
+
+                </div>
+
+
+            
+            </div>
+
+                <div class="preview">
+                    <h2>PREVIEW</h2>
+                    <div class="item">
+                        <div class="card">
+                                <div class="image-preview img-o" id="imagePreview">
+                                    <img src="../Asset/image/Rectangle 12 (1).png" alt="Image Preview" class="image-preview__image" >
+                                    <span class="image-preview__default-text"></span>
+                                </div>
+                            
+                            <div class="discount">
+                                <h4><span id="four">20</span>% Discount</h4>
+                            </div>
+                        <div class="deals">
+                            <h6 id="one">Genesis</h6>
+                            <h6><span id="three">Christmas</span>  Deals</h6>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="publish">
+                    <button type="submit">PUBLISH</button>
+                </div>
+            
+            </form>
+        </div>
+</div>
+
+
+<script src="../Script/main.js"></script>
+<script>
+    const inpFile = document.getElementById("inpFile");
+    const previewContainer = document.getElementById("imagePreview");
+    const previewImage = previewContainer.querySelector(".image-preview__image");
+    const previewDefaultText = previewContainer.querySelector(".image-preview__default-text");
+
+
+    inpFile.addEventListener("change", function(){
+        const file = this.files[0];
+    
+
+        if  (file) {
+            const reader = new FileReader();
+
+            previewDefaultText.style.display = "none";
+            previewImage.style.display = "block";
+
+            reader.addEventListener("load", function(){
+            previewImage.setAttribute("src", this.result);
+            });
+
+            reader.readAsDataURL(file);
+        } else {
+            previewDefaultText.style.display = null;
+            previewImage.style.display = null;
+            previewImage.setAttribute("src", "");
+
+        }
+    });
+
+
+
+    var company = document.getElementById('company');
+    var one = document.getElementById('one');
+    var save = document.getElementById('save');
+     var two = document.getElementById('two');
+     var deal= document.getElementById('deal');
+    var three = document.getElementById('three');
+    var four = document.getElementById('four');
+    var discount = document.getElementById('discount');
+    var imag1 = document.getElementById('imag1');
+    var five = document.getElementById('five');
+    var cardimg = document.getElementById('cardimg');
+
+
+     function func(){
+      one.innerHTML = company.value;
+      three.innerHTML = deal.value;
+      four.innerHTML = discount.value
+      five.innerHTML = imag1.value
+    }
+
+    save.addEventListener('click', func);
+
+</script>
+</body>
+</html>

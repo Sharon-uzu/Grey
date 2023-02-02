@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Asset/style/style.css">
+    <link rel="stylesheet" href="../Asset/style/media.css">
+    <title>AZ -Riders LogIn</title>
+</head>
+<body>
+    <section class="sign">
+
+        <div class="img-b"></div>
+        <div class="signup">
+
+            <form action="../vendors/live.html" method="get">
+            <h1>LogIn to AZ</h1>
+            <input type="email" name="" id="email" placeholder="E-mail" required><br>
+            <input type="password" name="" id="password" placeholder="Password" required><br>
+            <button type="submit" onclick="check()">LogIn</button>
+
+            <div class="acct">
+                <p class="para">Don't have an account? <span><a href="../Pages/Rsignup.html">SignUp</a></span></p>
+            </div>
+            
+        </div>
+    </form>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../Script/main.js"></script>
+
+
+    <script>
+        
+        function check(){
+    if (full.value == "") {
+        alert('Please enter your full name');
+        return false;
+    } 
+
+
+    if(document.getElementById('email').value == ""){
+        alert('Please enter your email');
+       return false
+    }
+    else if(document.getElementById('password').value == ""){
+        alert('Please choose a password');
+       return false
+    }
+    else{
+       
+    }
+
+}
+
+
+
+
+
+    </script>
+</body>
+</html>

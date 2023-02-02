@@ -1,0 +1,775 @@
+@media screen and (max-width:1000px) {
+    header nav .logo{
+        width: 40%;
+    } 
+    
+    header nav .logo img{
+        width: 60%;
+    }
+    .div1{
+        width: 80%;
+        margin: auto;
+        color: transparent;
+    }
+    .landing-page .contnt{
+       flex-direction: column-reverse;
+       margin-top: 12rem;
+       width: 86%;
+    }
+    .landing-page .contnt .text{
+        width: 95%;
+        margin: auto;
+    }
+    .landing-page .contnt .text h1{
+        line-height: 36px;
+        font-size: 32px;
+        width: 100%;
+        text-align: center;
+    }
+    .landing-page .contnt .text p{
+        margin-bottom: 1rem;
+        font-size: 16px;
+    }
+    .landing-page .contnt form{
+       flex-direction: column;
+       width: 100%;
+    }
+    .landing-page .contnt .input{
+        width: 100%;
+        height: 55px;
+     }
+     .landing-page .contnt .input{
+       border-radius: 15px;
+    }
+     .landing-page .contnt .input .img{
+        width: 20%;
+        text-align: center;
+    }
+    .landing-page .contnt form button{
+        width: 50%;
+       border-radius: 15px;
+    }
+    .landing-page .contnt .image .slider img{
+        height: 10rem;
+        width: 100%;
+    }
+
+
+    /* how it works */
+
+    .how .first h1{
+        font-size: 36px;
+        margin-top: 0;
+    }
+    .how .second{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 3rem;
+    }
+    .how .second .one{
+        width: 100%;
+    }
+    .how .get button{
+        width: 47%;
+    }
+    .meaning{
+        margin-top: 3rem;
+    }
+    .meaning .cntnt{
+        flex-direction: column-reverse;
+   }
+   .meaning .cntnt .left{
+    width: 100%;
+    padding-bottom: 2rem;
+    }
+    .meaning .cntnt .left h2{
+        width: 90%;
+        font-size: 32px;
+        line-height: 46px;
+    }
+    .meaning .cntnt .left p{
+        width: 90%;
+    }
+    .meaning .cntnt .right{
+        width: 100%;
+    }
+    .meaning .cntnt .right img{
+        width: 100%;
+        height: 40vh;
+    }
+    .grey{
+        margin-top: -50vh;
+    }
+
+    /* hungry for more */
+    .more h1{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .more .m-two .m-two-a h4{
+        font-size: 17px;
+    }
+    .more .m-one{
+        width: 90%;
+        margin: auto;
+    }
+    .more .m-two{
+        grid-template-columns: 1fr;
+    }
+    .more .m-two .m-two-a{
+       margin-bottom: 1rem;
+    }
+
+    /* footer */
+    footer{
+        margin-top: 4rem;
+    }
+    footer .foot{
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer .foot .foot1{
+        width: 90%;
+    }
+    
+    footer .foot .foot1 h4{
+        font-size: 20px;
+    }
+    footer .foot .foot1 ul li a{
+        font-size: 16px;
+    } 
+    footer .foot .foot1 ul li {
+        font-size: 16px;
+    } 
+
+    footer .foot .foot1{
+        margin-bottom: 1rem;
+    }
+    footer .main-footer .eng{       
+        width: 90%;
+        justify-content: center;
+    }
+    footer .main-footer{
+        width: 90%;  
+        flex-direction: column;  
+        text-align: center;
+    }
+    footer .main-footer .second-f{
+       width: 90%;
+       text-align: center;
+    }
+   
+
+    /* FORM */
+
+    .sign .signup{
+        width: 85%;
+    }
+
+
+    /* landing.html */
+    .cards{
+        width: 85%;
+        grid-template-columns: 1fr;
+    }
+    .cards .card{
+        margin-bottom: 2rem;
+    }
+    .cards .card .cad h6{
+        font-size: 14px;
+
+    }
+
+    .drop .dropdown{
+        width: 90%;
+        margin-top: 0;
+    }
+    .see{
+        padding: 0;
+        padding-bottom: 1rem;
+        width: 45%;
+    }
+
+    /* discount */
+    .discount{
+        width: 60%;
+     }
+     .discount-m h6{
+        font-size: 11px;
+     }
+     .discount-m h5{
+        font-size: 12px;
+     }
+
+     /* vendor */
+     .backg{
+        height: 40vh;
+    }
+
+     .backg-c .content{
+        height: auto;
+    }
+    .backg-c .content .anc a{
+        font-size: 16px;
+    }
+    .backg-c .content h2{
+        width: 85%;
+        font-size: 22px;
+        padding-bottom: 1rem;
+    }
+    .list-item{
+        margin-top: 2rem;
+    }
+    .list-item .item a{
+        font-size: 16px;
+    }
+    .boxs{
+        margin-top: 1rem;
+    }
+    .main-box{
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+    }
+
+    /* delivery */
+    .delivery{
+        padding: .2rem 0;     }
+    .delivery .del-c{
+       flex-direction: column;
+     }
+     .delivery .del-c .txt{
+        width: 95%;
+        margin: auto;
+     }
+     .delivery .del-c .txt h5{
+        font-size: 24px;
+     }
+     .delivery .del-c .bar{
+        width: 90%;
+        height: auto;
+        margin: .5rem;
+     }
+     .delivery .del-c .bar input{
+        width: 70%;
+      }
+
+      /* vendor.html */
+      .boxs{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .boxs a{
+       text-decoration: none;
+        color: #000;
+    }
+    .boxs h2{
+        width: 97%;
+        margin: auto;
+        
+    }
+    .boxs .main-box{
+        grid-template-columns: 1fr;
+    }
+    .boxs .main-box .box{
+        border: 1px solid #4E4D4D;
+        height: auto;
+       display: flex;
+       width: 95%;
+       margin: auto;
+       justify-content: space-between;
+       text-align: start;
+       margin-bottom: 1rem;
+    }
+    .boxs .main-box .box .img{
+        width: 26%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        height: fit-content;
+     }
+     
+     /* .boxs .main-box .box img{
+        width: 25%;
+        object-fit: contain;
+     } */
+     .boxs .main-box .box .img img{
+        width: 100%;
+        object-fit: cover;
+
+     }
+     .boxs .main-box .box .box-c{
+        width: 70%;
+        margin: auto;
+        margin-top: .6rem;
+      }
+      .boxs .main-box .box .box-c h3{
+        font-size: 15px;
+      }
+      .boxs .main-box .box .box-c p{
+        font-size: 10px;
+      }
+      .boxs .main-box .box .box-c h4{
+        text-align: right;
+        width: 95%;
+        font-size: 14px;
+      }
+
+      /* ADD TO CART */
+      .cart{
+       height: auto;
+       margin: auto;
+    }
+    .add-cart{
+        flex-direction: column;
+    }
+    .add-cart .first{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    .add-cart .second{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .add-cart .second button{
+        width: 90%;
+    }
+      .cart .cart-c{
+        grid-template-columns: 1fr;
+        width: 90%;
+        height: auto;
+        margin-top: 2rem;
+    }
+    .cart .cart-c .cart-left{
+        width: 95%;
+        height: auto;
+        border: none;
+    }
+    .cart .cart-c .cart-left .c-img{
+        width: 100%;
+    }
+    .cart .cart-c .cart-left .cart-lc{
+        width: 95%;
+    }
+    .cart .x{
+        width: 90%;
+    }
+    .cart .cart-c form{
+        width: 100%;
+    }
+    .cart .cart-c form .form-c{
+        width: 90%;
+    }
+
+    .add-to-cart{
+        width: 92%;
+        margin: 0;
+        margin: auto;
+    }
+    .add-to-cart .minus-c{
+        width: 50%;
+        margin: auto;
+    }
+    .add-to-cart .minus span{
+        width: 100%;
+    }
+       
+    .cart .add-to-cart button{
+        width: 35%;
+       
+    }  
+    .cart .new{
+        width: 80%;  
+    }
+    .cart .newww{
+        margin-left: 0;
+        margin: auto;
+        margin-top: 3rem;
+     }
+    
+    /* checkout */
+
+    .checkout-one{
+        margin-top: 1rem;
+        padding-bottom: 0;
+        width: 100%;
+    }
+    .checkout-one .checkout1{
+        width: 100%;
+        margin-bottom: .5rem;
+        height: 3.5rem;
+    }
+    .checkout-one .checkout1 img{
+        width: 90%;
+        height: 3.5rem;
+    }
+    .checkout-two .check1 {
+        flex-direction: column;
+     }
+     .checkout-two {
+        width: 100%;
+     }
+     .checkout-two .check1 .num{
+        width: 100%;
+        margin-bottom: 1rem;
+     }
+     .checkout-two .check1 .holder{
+        width: 100%;
+     }
+     .checkout-two  input{
+        width: 100%;
+        height: 35px;
+        margin-top: .5rem;
+     }
+     .checkout-two  select{
+        width: 98%;
+        padding: 10px;
+        height: 35px;
+        margin-bottom: 1rem;
+        margin-top: .3rem;
+     }
+     .checkout-two  label{
+        margin-bottom: .5rem;
+        font-size: 15px;
+     }
+     .checkout-two .check2{
+     flex-direction: column;
+     }
+     .checkout-two .check2 .date{
+        width: 100%;
+     }
+     .checkout-two .check2 .date label{
+        padding-bottom: 2rem;
+     }
+     .checkout-two .check2 .cvc{
+        width: 100%;
+     }
+     .check{
+        width: 95%;
+     }
+     .total{
+        width: 100%;
+     }
+     .total .total1 h4{
+        font-size: 16px;
+     }
+     .total .total-text .total1 p{
+       font-size: 15px;
+     }
+     .check-form .submit{
+        height: 50px;
+     }
+     .check-form button{
+        font-size: 16px;
+     }
+
+
+     /* check */
+
+     .checks .check-flex{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 1rem;
+      }
+      .checks .check-flex .c-left{
+        width: 100%;
+        border-right: none;
+        height: unset;
+      }
+      .checks .check-flex .c-left .ch-box{
+        margin-top: 8px;
+       }
+      .checks .check-flex .left-c{
+        width: 100%;
+      }
+      .checks form .form{
+        width: 90%;
+       }
+
+       .checks .check-flex .c-right{
+        width: 100%;
+      }
+      .checks .check-flex .c-right .p-box .c-text h2{
+        font-size: 15px;
+       }
+       .c-right button{
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      /* abs */
+      .abs1{
+        width: 90%;
+        top: 20%;
+        left: 5%;
+      }
+      .abs1 input{
+        width: 70%;
+      }
+      .abs1 button{
+        width: 20%;
+        
+      }
+
+
+
+      /* VENDORS DASHBOARD */
+
+
+      
+      
+      .menu{
+        width: 100%;  
+        position: absolute; 
+        display: block;  
+    }
+    .menu #closes{
+        display: none;
+    }
+    .menu img{
+        position: absolute;
+        right: 1rem;
+        width: 1.2rem;
+      }
+      #dark{
+        background-color: hsla(0, 0%, 0%, .5);
+        position: absolute;
+        width: 100%;
+        height: 160vh;
+        top: 2rem;
+        display: none;
+        z-index: 20;
+      }
+
+      .live-d{
+        height: auto;
+        background: #F8F7F7;
+        position: relative;
+    }
+
+      .live-d .dash{
+      position: absolute;
+      width: 80%;
+      padding-bottom: 2rem;
+      z-index: 22;
+      top: 3rem;
+      display: none;
+    }
+    
+     .d-right{
+        width: 100%;
+    }
+    .dash-card .first-card1 .search{
+        width: 90%;
+    }
+    .dash-card .first-card1 .notification{
+        width: 10%;
+       display: grid;
+       place-content: center;
+        height: 50px;
+    }
+    
+    .first-card2 .order-img{
+        width: 40%;
+        margin: auto;
+        height: 13rem;
+       }
+    .first-card2 .order-img img{
+        width: 98%;
+       }
+       .first-card2 .order-txt{
+        width: 60%;
+       }
+    .first-card2 .order-txt h4{
+        font-size: 28px;
+       }
+       .first-card2 .order-txt p{
+        font-size: 12px;
+       }
+      
+
+       /* CLIVE */
+
+       .tables{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2rem;
+     }
+     .table{
+        width: 100%;
+        margin: auto;
+     }
+     .table  .first{
+        width: 97%;
+     }
+     .table  .first table{
+        width: 100%;
+     }
+     .table  .first th{
+        font-size: 15px;
+      }
+
+      .table .second{
+       width: 97%;
+     }
+
+     /* riders details */
+     .rider{
+        margin-top: 8rem;
+        width: 100%;
+        margin-bottom: 1rem;
+     }
+     .rider .frst{
+        width: 97%;
+     }
+     .rider .frst .pix img{
+        width: 3.6rem;
+        height: 3.6rem;
+     }
+
+     .rider .summary{
+        width: 97%;
+     }
+     .rider .order{
+        width: 97%;
+     }
+
+     /* upload */
+     
+     .products{
+        flex-direction: column;
+        margin-top: 0rem;
+     }
+     .products .inp{
+        width: 100%;
+        margin-top: 4rem;
+     }
+
+     .products .img{
+        width: 100%;
+        padding-bottom: 1rem;
+     }
+     .img-p{
+        margin-top: 3rem;
+     }
+     .last img{
+        margin-top: 1rem;
+     }
+     .products .butt{
+       text-align: end;
+     }
+     .products button{
+        width: 40%;
+     }
+
+     .preview{
+        margin-top: 4rem;
+  }
+  .main-box .box{
+    width: 100%;
+    margin: auto;
+    height: auto;
+ }
+ .main-box .box .img{
+    
+    width: 36%;
+    object-fit: fill;
+ }
+ .main-box .box .box-c h3{
+    font-size: 16px;
+    width: 100%;
+  }
+ .main-box .box .box-c p{
+    font-size: 14px;
+  }
+  /* offer */
+  .item .card{
+    width: 90%;
+    margin: auto;
+    
+ }
+ .publish{
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+ }
+ .publish button{
+    width: 50%;
+ }
+ 
+     
+/* ORDER */
+
+.d-d{
+    width: 100%;
+   }
+   .orders{
+    width: 95%;
+    grid-template-columns: 1fr 1fr ;
+   }
+   .orders .order1{
+   width: 90%;
+   margin-bottom: .6rem;
+   padding: 1rem 0;
+   }
+   .orders .order1 h5{
+    font-size: 18px;
+   }
+   .order2{
+   flex-direction: column-reverse;
+   }
+   .drops{
+    width: 100%;
+    margin-top: 1rem;
+   }
+   .order2 .order-l{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    margin-bottom: 3rem;
+   }
+   .order2 .order-r{
+    width: 96%;
+    margin: auto;
+   
+   }
+   .mmm{
+    height: 70vh
+   }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width:320px) {
+    .live-d{
+        margin-bottom: 3rem;
+    }
+    .rec .rec-c h5{
+        font-size: 12px;
+       } 
+       .first-card2 .order-txt h4{
+        font-size: 22px;
+       }
+       .first-card2 .order-img{
+        width: 50%;
+       }
+       .first-card2 .order-txt{
+        width: 50%;
+       }
+       .order2 .order-r .order-r1 h4{
+        font-size: 26px;
+     }
+     
+
+}
